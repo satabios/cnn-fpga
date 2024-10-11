@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="convolver_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="convolver_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="818.070 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,006.871 ns"></ZoomEndTime>
+      <Cursor1Time time="578.387 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="179"></NameColumnWidth>
+      <ValueColumnWidth column_width="195"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/convolver_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/convolver_tb/ce" type="logic">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/convolver_tb/weight1" type="array">
+      <obj_property name="ElementShortName">weight1[143:0]</obj_property>
+      <obj_property name="ObjectShortName">weight1[143:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/convolver_tb/global_rst" type="logic">
+      <obj_property name="ElementShortName">global_rst</obj_property>
+      <obj_property name="ObjectShortName">global_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/convolver_tb/activation" type="array">
+      <obj_property name="ElementShortName">activation[15:0]</obj_property>
+      <obj_property name="ObjectShortName">activation[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/convolver_tb/conv_op" type="array">
+      <obj_property name="ElementShortName">conv_op[31:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_op[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/convolver_tb/end_conv" type="logic">
+      <obj_property name="ElementShortName">end_conv</obj_property>
+      <obj_property name="ObjectShortName">end_conv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/convolver_tb/valid_conv" type="logic">
+      <obj_property name="ElementShortName">valid_conv</obj_property>
+      <obj_property name="ObjectShortName">valid_conv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/convolver_tb/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/convolver_tb/clkp" type="array">
+      <obj_property name="ElementShortName">clkp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">clkp[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

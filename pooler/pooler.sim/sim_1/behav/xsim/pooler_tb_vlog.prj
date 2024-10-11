@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../pooler.srcs/sources_1/imports/fpga-ml-accelerator-master/comparator2.v" \
+"../../../../pooler.srcs/sources_1/imports/fpga-ml-accelerator-master/control_logic2.v" \
+"../../../../pooler.srcs/sources_1/imports/fpga-ml-accelerator-master/input_mux.v" \
+"../../../../pooler.srcs/sources_1/imports/fpga-ml-accelerator-master/max_reg.v" \
+"../../../../pooler.srcs/sources_1/imports/fpga-ml-accelerator-master/pooler.v" \
+"../../../../pooler.srcs/sources_1/imports/fpga-ml-accelerator-master/qmult.v" \
+"../../../../pooler.srcs/sources_1/imports/fpga-ml-accelerator-master/variable_shift_reg.v" \
+"../../../../pooler.srcs/sources_1/new/pooler_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,409 @@
+
+*** Running vivado
+    with args -log cnn_block.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cnn_block.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source cnn_block.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/utils_1/imports/synth_1/cnn_block_tb.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/utils_1/imports/synth_1/cnn_block_tb.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top cnn_block -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14476
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 821.512 ; gain = 405.945
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cnn_block' [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/cnn_block.v:3]
+INFO: [Synth 8-6157] synthesizing module 'convolver' [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/convolver.v:3]
+	Parameter n bound to: 9'b000001010 
+	Parameter k bound to: 9'b000000011 
+	Parameter s bound to: 1 - type: integer 
+	Parameter N bound to: 16 - type: integer 
+	Parameter Q bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mac_manual' [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/mac_manual.v:2]
+	Parameter N bound to: 16 - type: integer 
+	Parameter Q bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'qmult' [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/qmult.v:5]
+	Parameter N bound to: 16 - type: integer 
+	Parameter Q bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'qmult' (0#1) [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/qmult.v:5]
+INFO: [Synth 8-6157] synthesizing module 'qadd' [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/qadd.v:2]
+	Parameter N bound to: 16 - type: integer 
+	Parameter Q bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'qadd' (0#1) [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/qadd.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'mac_manual' (0#1) [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/mac_manual.v:2]
+INFO: [Synth 8-6157] synthesizing module 'variable_shift_reg' [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/variable_shift_reg.v:3]
+	Parameter WIDTH bound to: 16 - type: integer 
+	Parameter SIZE bound to: 9'b000000111 
+INFO: [Synth 8-6155] done synthesizing module 'variable_shift_reg' (0#1) [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/variable_shift_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'convolver' (0#1) [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/convolver.v:3]
+INFO: [Synth 8-6157] synthesizing module 'relu' [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/relu.v:3]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'relu' (0#1) [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/relu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'pooler' [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/pooler.v:3]
+	Parameter m bound to: 8 - type: integer 
+	Parameter p bound to: 9'b000000010 
+	Parameter N bound to: 16 - type: integer 
+	Parameter Q bound to: 12 - type: integer 
+	Parameter ptype bound to: 1 - type: integer 
+	Parameter psqr_inv bound to: 16'b0000010000000000 
+INFO: [Synth 8-6157] synthesizing module 'control_logic2' [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/control_logic2.v:17]
+	Parameter m bound to: 8 - type: integer 
+	Parameter p bound to: 9'b000000010 
+INFO: [Synth 8-6155] done synthesizing module 'control_logic2' (0#1) [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/control_logic2.v:17]
+INFO: [Synth 8-6157] synthesizing module 'comparator2' [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/comparator2.v:3]
+	Parameter N bound to: 16 - type: integer 
+	Parameter ptype bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'comparator2' (0#1) [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/comparator2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'max_reg' [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/max_reg.v:2]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'max_reg' (0#1) [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/max_reg.v:2]
+INFO: [Synth 8-6157] synthesizing module 'variable_shift_reg__parameterized0' [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/variable_shift_reg.v:3]
+	Parameter WIDTH bound to: 16 - type: integer 
+	Parameter SIZE bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'variable_shift_reg__parameterized0' (0#1) [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/variable_shift_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'input_mux' [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/input_mux.v:3]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'input_mux' (0#1) [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/input_mux.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'pooler' (0#1) [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/pooler.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_block' (0#1) [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/cnn_block.v:3]
+WARNING: [Synth 8-6014] Unused sequential element row_count_reg was removed.  [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/convolver.v:101]
+WARNING: [Synth 8-7129] Port clk in module qmult is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module qmult is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 915.004 ; gain = 499.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 915.004 ; gain = 499.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 915.004 ; gain = 499.438
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/utils_1/imports/synth_1/cnn_block_tb.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 915.004 ; gain = 499.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 915.004 ; gain = 499.438
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg' [C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/comparator2.v:20]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 915.004 ; gain = 499.438
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 5     
+	   2 Input   16 Bit       Adders := 9     
+	   2 Input   15 Bit       Adders := 32    
++---XORs : 
+	   2 Input      1 Bit         XORs := 10    
++---Registers : 
+	               32 Bit    Registers := 5     
+	               16 Bit    Registers := 28    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 3     
+	   2 Input   16 Bit        Muxes := 9     
+	   2 Input   15 Bit        Muxes := 30    
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 17    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP MAC[0].mac2/mul/f_result, operation Mode is: A*B.
+DSP Report: operator MAC[0].mac2/mul/f_result is absorbed into DSP MAC[0].mac2/mul/f_result.
+DSP Report: Generating DSP MAC[1].mac2/mul/f_result, operation Mode is: A*B.
+DSP Report: operator MAC[1].mac2/mul/f_result is absorbed into DSP MAC[1].mac2/mul/f_result.
+DSP Report: Generating DSP MAC[2].mac/mul/f_result, operation Mode is: A*B.
+DSP Report: operator MAC[2].mac/mul/f_result is absorbed into DSP MAC[2].mac/mul/f_result.
+DSP Report: Generating DSP MAC[3].mac2/mul/f_result, operation Mode is: A*B.
+DSP Report: operator MAC[3].mac2/mul/f_result is absorbed into DSP MAC[3].mac2/mul/f_result.
+DSP Report: Generating DSP MAC[4].mac2/mul/f_result, operation Mode is: A*B.
+DSP Report: operator MAC[4].mac2/mul/f_result is absorbed into DSP MAC[4].mac2/mul/f_result.
+DSP Report: Generating DSP MAC[5].mac/mul/f_result, operation Mode is: A*B.
+DSP Report: operator MAC[5].mac/mul/f_result is absorbed into DSP MAC[5].mac/mul/f_result.
+DSP Report: Generating DSP MAC[6].mac2/mul/f_result, operation Mode is: A*B.
+DSP Report: operator MAC[6].mac2/mul/f_result is absorbed into DSP MAC[6].mac2/mul/f_result.
+DSP Report: Generating DSP MAC[7].mac2/mul/f_result, operation Mode is: A*B.
+DSP Report: operator MAC[7].mac2/mul/f_result is absorbed into DSP MAC[7].mac2/mul/f_result.
+DSP Report: Generating DSP MAC[8].mac/mul/f_result, operation Mode is: A*B.
+DSP Report: operator MAC[8].mac/mul/f_result is absorbed into DSP MAC[8].mac/mul/f_result.
+WARNING: [Synth 8-3332] Sequential element (pool/cmp/temp_reg[15]) is unused and will be removed from module cnn_block.
+WARNING: [Synth 8-3332] Sequential element (pool/cmp/temp_reg[14]) is unused and will be removed from module cnn_block.
+WARNING: [Synth 8-3332] Sequential element (pool/cmp/temp_reg[13]) is unused and will be removed from module cnn_block.
+WARNING: [Synth 8-3332] Sequential element (pool/cmp/temp_reg[12]) is unused and will be removed from module cnn_block.
+WARNING: [Synth 8-3332] Sequential element (pool/cmp/temp_reg[11]) is unused and will be removed from module cnn_block.
+WARNING: [Synth 8-3332] Sequential element (pool/cmp/temp_reg[10]) is unused and will be removed from module cnn_block.
+WARNING: [Synth 8-3332] Sequential element (pool/cmp/temp_reg[9]) is unused and will be removed from module cnn_block.
+WARNING: [Synth 8-3332] Sequential element (pool/cmp/temp_reg[8]) is unused and will be removed from module cnn_block.
+WARNING: [Synth 8-3332] Sequential element (pool/cmp/temp_reg[7]) is unused and will be removed from module cnn_block.
+WARNING: [Synth 8-3332] Sequential element (pool/cmp/temp_reg[6]) is unused and will be removed from module cnn_block.
+WARNING: [Synth 8-3332] Sequential element (pool/cmp/temp_reg[5]) is unused and will be removed from module cnn_block.
+WARNING: [Synth 8-3332] Sequential element (pool/cmp/temp_reg[4]) is unused and will be removed from module cnn_block.
+WARNING: [Synth 8-3332] Sequential element (pool/cmp/temp_reg[3]) is unused and will be removed from module cnn_block.
+WARNING: [Synth 8-3332] Sequential element (pool/cmp/temp_reg[2]) is unused and will be removed from module cnn_block.
+WARNING: [Synth 8-3332] Sequential element (pool/cmp/temp_reg[1]) is unused and will be removed from module cnn_block.
+WARNING: [Synth 8-3332] Sequential element (pool/cmp/temp_reg[0]) is unused and will be removed from module cnn_block.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1125.109 ; gain = 709.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|qmult       | A*B         | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|qmult       | A*B         | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|qmult       | A*B         | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|qmult       | A*B         | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|qmult       | A*B         | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|qmult       | A*B         | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|qmult       | A*B         | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|qmult       | A*B         | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|qmult       | A*B         | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1130.984 ; gain = 715.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1131.105 ; gain = 715.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1131.105 ; gain = 715.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1131.105 ; gain = 715.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1131.105 ; gain = 715.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1131.105 ; gain = 715.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1131.105 ; gain = 715.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1131.105 ; gain = 715.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|cnn_block   | conv/MAC[2].SR/genblk1[6].sr_reg[6][15] | 8      | 32    | YES          | NO                 | YES               | 32     | 0       | 
+|cnn_block   | pool/SR/genblk1[3].sr_reg[3][14]        | 4      | 15    | YES          | NO                 | YES               | 15     | 0       | 
++------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|qmult       | A*B         | 15     | 10     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|qmult       | A*B         | 15     | 12     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|qmult       | A*B         | 15     | 9      | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|qmult       | A*B         | 15     | 10     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|qmult       | A*B         | 15     | 10     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|qmult       | A*B         | 15     | 11     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|qmult       | A*B         | 15     | 12     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|qmult       | A*B         | 15     | 10     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|qmult       | A*B         | 15     | 11     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |   133|
+|3     |DSP48E1 |     9|
+|4     |LUT1    |   156|
+|5     |LUT2    |    69|
+|6     |LUT3    |    34|
+|7     |LUT4    |   219|
+|8     |LUT5    |   189|
+|9     |LUT6    |    25|
+|10    |SRL16E  |    47|
+|11    |FDCE    |   170|
+|12    |FDRE    |   231|
+|13    |FDSE    |    64|
+|14    |IBUF    |    19|
+|15    |OBUF    |    36|
++------+--------+------+
+
+Report Instance Areas: 
++------+------------------+-----------------------------------+------+
+|      |Instance          |Module                             |Cells |
++------+------------------+-----------------------------------+------+
+|1     |top               |                                   |  1402|
+|2     |  conv            |convolver                          |   938|
+|3     |    \MAC[0].mac2  |mac_manual                         |    85|
+|4     |      mul         |qmult_23                           |    67|
+|5     |    \MAC[1].mac2  |mac_manual_0                       |    56|
+|6     |      add1        |qadd_21                            |     4|
+|7     |      mul         |qmult_22                           |    35|
+|8     |    \MAC[2].SR    |variable_shift_reg                 |    49|
+|9     |    \MAC[2].mac   |mac_manual_1                       |    39|
+|10    |      add1        |qadd_19                            |     4|
+|11    |      mul         |qmult_20                           |    35|
+|12    |    \MAC[3].mac2  |mac_manual_2                       |    56|
+|13    |      add1        |qadd_17                            |     4|
+|14    |      mul         |qmult_18                           |    35|
+|15    |    \MAC[4].mac2  |mac_manual_3                       |    56|
+|16    |      add1        |qadd_15                            |     4|
+|17    |      mul         |qmult_16                           |    35|
+|18    |    \MAC[5].SR    |variable_shift_reg_4               |    49|
+|19    |    \MAC[5].mac   |mac_manual_5                       |    39|
+|20    |      add1        |qadd_13                            |     4|
+|21    |      mul         |qmult_14                           |    35|
+|22    |    \MAC[6].mac2  |mac_manual_6                       |    56|
+|23    |      add1        |qadd_11                            |     4|
+|24    |      mul         |qmult_12                           |    35|
+|25    |    \MAC[7].mac2  |mac_manual_7                       |    56|
+|26    |      add1        |qadd_9                             |     4|
+|27    |      mul         |qmult_10                           |    35|
+|28    |    \MAC[8].mac   |mac_manual_8                       |    84|
+|29    |      add1        |qadd                               |     4|
+|30    |      mul         |qmult                              |    35|
+|31    |  pool            |pooler                             |   408|
+|32    |    SR__0         |variable_shift_reg__parameterized0 |    63|
+|33    |    cmp           |comparator2                        |     2|
+|34    |    log           |control_logic2                     |   328|
+|35    |    m1            |max_reg                            |    15|
++------+------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1131.105 ; gain = 715.539
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1131.105 ; gain = 715.539
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1131.105 ; gain = 715.539
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1143.016 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 142 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1243.777 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 4dd3b698
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 21 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1243.777 ; gain = 834.375
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/maxsa/Downloads/Verilog/neural_network/neural_network.runs/synth_1/cnn_block.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cnn_block_utilization_synth.rpt -pb cnn_block_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 20 01:20:46 2023...

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1679300412" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/cnn_block_tb.dcp">
+  <File Type="PA-TCL" Name="cnn_block.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="cnn_block_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="cnn_block_reports.tcl"/>
+  <File Type="RDS-RDS" Name="cnn_block.vds"/>
+  <File Type="RDS-UTIL" Name="cnn_block_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="cnn_block_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="cnn_block.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="cnn_block_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="cnn_block_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/fpga-ml-accelerator-master/comparator2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga-ml-accelerator-master/comparator2.v"/>
+        <Attr Name="ImportTime" Val="1611730089"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga-ml-accelerator-master/control_logic2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga-ml-accelerator-master/control_logic2.v"/>
+        <Attr Name="ImportTime" Val="1611730089"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga-ml-accelerator-master/convolver.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga-ml-accelerator-master/convolver.v"/>
+        <Attr Name="ImportTime" Val="1611730089"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga-ml-accelerator-master/input_mux.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga-ml-accelerator-master/input_mux.v"/>
+        <Attr Name="ImportTime" Val="1611730089"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga-ml-accelerator-master/mac_manual.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga-ml-accelerator-master/mac_manual.v"/>
+        <Attr Name="ImportTime" Val="1611730089"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga-ml-accelerator-master/max_reg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga-ml-accelerator-master/max_reg.v"/>
+        <Attr Name="ImportTime" Val="1611730089"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga-ml-accelerator-master/pooler.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga-ml-accelerator-master/pooler.v"/>
+        <Attr Name="ImportTime" Val="1611730089"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga-ml-accelerator-master/qadd.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga-ml-accelerator-master/qadd.v"/>
+        <Attr Name="ImportTime" Val="1611730089"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga-ml-accelerator-master/qmult.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga-ml-accelerator-master/qmult.v"/>
+        <Attr Name="ImportTime" Val="1611730089"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga-ml-accelerator-master/relu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga-ml-accelerator-master/relu.v"/>
+        <Attr Name="ImportTime" Val="1611730089"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga-ml-accelerator-master/variable_shift_reg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga-ml-accelerator-master/variable_shift_reg.v"/>
+        <Attr Name="ImportTime" Val="1611730089"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga-ml-accelerator-master/cnn_block.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga-ml-accelerator-master/cnn_block.v"/>
+        <Attr Name="ImportTime" Val="1679078685"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga-ml-accelerator-master/convolver_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga-ml-accelerator-master/convolver_tb.v"/>
+        <Attr Name="ImportTime" Val="1611730089"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga-ml-accelerator-master/cnn_block_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fpga-ml-accelerator-master/cnn_block_tb.v"/>
+        <Attr Name="ImportTime" Val="1679078879"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/linear.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="cnn_block"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/cnn_block_tb.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

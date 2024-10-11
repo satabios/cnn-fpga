@@ -1,0 +1,17 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot convolver_tb_behav xil_defaultlib.convolver_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 33 for port 'conv_op' [C:/Users/maxsa/Downloads/Verilog/convolution/convolution.srcs/sources_1/imports/fpga-ml-accelerator-master/convolver_tb.v:28]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mac_manual
+Compiling module xil_defaultlib.variable_shift_reg(WIDTH=33,SIZE...
+Compiling module xil_defaultlib.convolver(n=9'b010110)
+Compiling module xil_defaultlib.convolver_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot convolver_tb_behav

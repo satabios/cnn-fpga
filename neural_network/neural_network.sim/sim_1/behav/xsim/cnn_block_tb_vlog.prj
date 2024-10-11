@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/cnn_block.v" \
+"../../../../neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/comparator2.v" \
+"../../../../neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/control_logic2.v" \
+"../../../../neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/convolver.v" \
+"../../../../neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/input_mux.v" \
+"../../../../neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/mac_manual.v" \
+"../../../../neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/max_reg.v" \
+"../../../../neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/pooler.v" \
+"../../../../neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/qadd.v" \
+"../../../../neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/qmult.v" \
+"../../../../neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/relu.v" \
+"../../../../neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/variable_shift_reg.v" \
+"../../../../neural_network.srcs/sources_1/imports/fpga-ml-accelerator-master/cnn_block_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="cnn_block_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="cnn_block_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="106.001 ns"></ZoomEndTime>
+      <Cursor1Time time="77.188 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="179"></NameColumnWidth>
+      <ValueColumnWidth column_width="159"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/cnn_block_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_block_tb/ce" type="logic">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_block_tb/weight1" type="array">
+      <obj_property name="ElementShortName">weight1[143:0]</obj_property>
+      <obj_property name="ObjectShortName">weight1[143:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_block_tb/global_rst" type="logic">
+      <obj_property name="ElementShortName">global_rst</obj_property>
+      <obj_property name="ObjectShortName">global_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_block_tb/activation" type="array">
+      <obj_property name="ElementShortName">activation[15:0]</obj_property>
+      <obj_property name="ObjectShortName">activation[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_block_tb/input_data" type="array">
+      <obj_property name="ElementShortName">input_data[35:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">input_data[35:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_block_tb/acc_op" type="array">
+      <obj_property name="ElementShortName">acc_op[15:0]</obj_property>
+      <obj_property name="ObjectShortName">acc_op[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_block_tb/conv_out" type="array">
+      <obj_property name="ElementShortName">conv_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_block_tb/conv_valid" type="logic">
+      <obj_property name="ElementShortName">conv_valid</obj_property>
+      <obj_property name="ObjectShortName">conv_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_block_tb/conv_end" type="logic">
+      <obj_property name="ElementShortName">conv_end</obj_property>
+      <obj_property name="ObjectShortName">conv_end</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_block_tb/end_op" type="logic">
+      <obj_property name="ElementShortName">end_op</obj_property>
+      <obj_property name="ObjectShortName">end_op</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_block_tb/valid_op" type="logic">
+      <obj_property name="ElementShortName">valid_op</obj_property>
+      <obj_property name="ObjectShortName">valid_op</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_block_tb/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_block_tb/ip_file" type="array">
+      <obj_property name="ElementShortName">ip_file[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ip_file[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_block_tb/r3" type="array">
+      <obj_property name="ElementShortName">r3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_block_tb/op_file" type="array">
+      <obj_property name="ElementShortName">op_file[31:0]</obj_property>
+      <obj_property name="ObjectShortName">op_file[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnn_block_tb/clkp" type="array">
+      <obj_property name="ElementShortName">clkp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">clkp[31:0]</obj_property>
+   </wvobject>
+</wave_config>

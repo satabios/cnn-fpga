@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../convolution.srcs/sources_1/imports/fpga-ml-accelerator-master/convolver.v" \
+"../../../../convolution.srcs/sources_1/imports/fpga-ml-accelerator-master/mac_manual.v" \
+"../../../../convolution.srcs/sources_1/imports/fpga-ml-accelerator-master/variable_shift_reg.v" \
+"../../../../convolution.srcs/sources_1/imports/fpga-ml-accelerator-master/convolver_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
